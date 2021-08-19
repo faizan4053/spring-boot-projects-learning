@@ -1,5 +1,0 @@
-psql -U eldorado -h eldorado-prod-db.cuhrancivu97.us-east-1.rds.amazonaws.com
-
-0FH08n85Zb6bLEpOI8BV
-
-34.232.67.25

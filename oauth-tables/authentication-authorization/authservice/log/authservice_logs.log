@@ -1,7 +1,0 @@
-2021-07-29 11:20:15 ERROR LoggerConfig:48 - User is not present for username none@not.com
-2021-07-29 11:20:15 INFO  LoggerConfig:51 - User is present with username doug@bailey.com
-2021-07-29 11:20:15 INFO  LoggerConfig:51 - User is present with username doug@bailey.com
-2021-07-29 11:25:26 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
-2021-07-29 11:27:16 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
-2021-07-29 11:39:08 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
-2021-07-29 18:34:59 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
