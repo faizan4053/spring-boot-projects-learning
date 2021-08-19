@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: hp
+Build-Jdk: 15.0.2
+Implementation-Title: springboot-thymeleaf-security-demo
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.apress
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/springboot-thymeleaf-security-demo
+Created-By: Maven Integration for Eclipse
+

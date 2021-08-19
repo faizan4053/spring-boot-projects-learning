@@ -1,0 +1,26 @@
+2021-07-29 23:26:36 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-29 23:31:42 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-30 01:08:32 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:10:23 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:11:11 INFO  LoggerConfig:52 - User is present with username doug@1234.com
+2021-07-30 01:11:19 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:12:51 INFO  LoggerConfig:52 - User is present with username doug@1234.com
+2021-07-30 01:12:58 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:13:17 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:14:06 INFO  LoggerConfig:52 - User is present with username doug@12345.com
+2021-07-30 01:14:56 INFO  LoggerConfig:52 - User is present with username doug@123456.com
+2021-07-30 01:15:07 INFO  LoggerConfig:52 - User is present with username doug@12345.com
+2021-07-30 01:15:14 INFO  LoggerConfig:52 - User is present with username doug@1234.com
+2021-07-30 01:15:22 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:15:31 ERROR LoggerConfig:49 - User is not present for username doug@1234567.com
+2021-07-30 01:16:37 INFO  LoggerConfig:52 - User is present with username doug@1234567.com
+2021-07-30 01:19:14 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 01:24:12 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 03:04:20 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 03:06:11 ERROR LoggerConfig:49 - User is not present for username none@not.com
+2021-07-30 03:07:27 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 03:08:33 ERROR LoggerConfig:49 - User is not present for username none@not.com
+2021-07-30 03:08:33 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 03:08:33 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 10:02:02 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 11:02:32 INFO  LoggerConfig:52 - User is present with username doug@123.com

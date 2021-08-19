@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dynamo-config
+data:
+  amazon.aws.region: us-east-1
+  amazon.dynamodb.endpoint: http://dynamodb.us-east-1.amazonaws.com
+
+
+

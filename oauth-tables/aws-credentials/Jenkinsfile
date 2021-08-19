@@ -1,0 +1,153 @@
+pipeline {
+    agent any
+
+	tools {
+        jdk 'jdk11'
+    }
+
+    environment { 
+    	dockerImage = ''
+       	KUBECONFIG ='/home/ubuntu/config'
+		
+        // BRANCH_NAME = env.GIT_BRANCH.replace('productphase-authservice/', '')
+        REPO_URL='https://tools.publicis.sapient.com/bitbucket/scm/psms/productphase-authservice.git'
+        ECR_URL = 'https://364768860491.dkr.ecr.us-east-1.amazonaws.com'
+		registry = "eldorado:auth-$BUILD_NUMBER"
+		registryCredential = 'ecr:us-east-1:prod-aws-access'
+		IMAGE_PREFIX = '364768860491.dkr.ecr.us-east-1.amazonaws.com'
+    }
+
+
+    stages {
+
+    
+        
+    stage('Input Tag') {
+            steps {
+                echo "Taking tag input"
+                input('Do you want to proceed?')
+            }
+        }
+    stage('Pull Tagged Code')
+    {
+    	steps{
+    		echo "Pulling Branch"
+    		withCredentials([gitUsernamePassword(credentialsId: 'bitbucket-user-account',
+                 gitToolName: 'git-tool')]) {
+  				 sh 'git clone --depth 1 --branch v1.0 $REPO_URL .'
+			}
+    	}
+    }
+	
+	stage('Compile')
+	{
+	    steps{
+           // echo env.GIT_BRANCH
+	       sh '''chmod 777 mvnw 
+		    ./mvnw clean compile'''	
+		}
+	}
+	
+	stage('Test')
+	{
+		steps{
+			sh '''
+		    ./mvnw test'''	
+		}
+	}
+
+	stage('Create JAR') {
+
+		steps {
+			sh '''
+		    	./mvnw install'''	
+		}
+	}
+	
+
+
+
+	// stage('SonarQube Analysis')
+	// {
+	// 	steps{
+	// 		withSonarQubeEnv('sonarqube') {
+	// 			sh '''
+	// 	    	./mvnw sonar:sonar'''
+	// 		}
+			
+	// 	}
+	// }
+	// stage("Quality Gate"){
+	// 	steps{
+	// 		timeout(time: 5, unit: 'MINUTES') { 
+	// 		script{
+	// 			sleep(10)
+	// 			def qg = waitForQualityGate() 
+	// 			if (qg.status != 'OK') {
+	// 			error "Pipeline aborted due to quality gate failure: ${qg.status}"
+	// 			}
+	// 		}
+	// 		}
+	// 	}
+	// }
+
+    stage('Building Our Image') { 
+    	
+        steps { 
+                script {
+                    dockerImage = docker.build(registry)
+                }
+            } 
+        }
+        
+	stage('Push Image') {
+		// when {
+  //               anyOf {
+  //                   branch 'master';
+  //                   branch 'dev';      
+                           
+  //               }
+  //       }
+		steps {
+	            script {
+	                docker.withRegistry(ECR_URL, registryCredential) {
+	                    dockerImage.push()
+	                sh "docker image rmi -f $IMAGE_PREFIX/$registry"
+	                sh '''docker rmi $(docker images --filter=reference="*auth-*" -q)'''
+	                } 
+	            }
+	        }
+		}
+	stage ('Deploy Image') {
+		// when {
+  //               anyOf {
+  //                   branch 'master';
+  //                   branch 'dev';      
+                           
+  //               }
+  //       	}
+
+        steps {
+        		withAWS(credentials:'prod-aws-access')
+        		{ 
+	        		sh '''
+		            kubectl apply -f auth-service.yml -n eldorado
+		            kubectl apply -f auth-deployment.yml -n eldorado
+		        	kubectl set image deployment/auth-deployment auth=$IMAGE_PREFIX/$registry -n eldorado''' 
+	        	}
+	        }
+		}
+
+	}
+	
+	post{
+	    always{
+	        echo "Deleting Directory"
+	        deleteDir()
+	    }
+	}
+}
+
+
+
+

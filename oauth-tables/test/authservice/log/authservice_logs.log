@@ -1,0 +1,66 @@
+2021-07-29 11:20:15 ERROR LoggerConfig:48 - User is not present for username none@not.com
+2021-07-29 11:20:15 INFO  LoggerConfig:51 - User is present with username doug@bailey.com
+2021-07-29 11:20:15 INFO  LoggerConfig:51 - User is present with username doug@bailey.com
+2021-07-29 11:25:26 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-29 11:27:16 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-29 11:39:08 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-29 18:34:59 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-30 13:40:07 INFO  LoggerConfig:51 - User is present with username faizan@mohd.com
+2021-07-30 13:40:08 ERROR LoggerConfig:48 - User is not present for username none@not.com
+2021-07-30 13:40:08 INFO  LoggerConfig:51 - User is present with username doug@bailey.com
+2021-07-30 13:40:08 INFO  LoggerConfig:51 - User is present with username doug@bailey.com
+2021-07-30 13:54:24 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 13:54:32 INFO  LoggerConfig:52 - User is present with username doug@1234.com
+2021-07-30 13:54:39 INFO  LoggerConfig:52 - User is present with username doug@12345.com
+2021-07-30 13:54:47 INFO  LoggerConfig:52 - User is present with username doug@123456.com
+2021-07-30 13:54:53 INFO  LoggerConfig:52 - User is present with username doug@1234567.com
+2021-07-30 13:55:00 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 14:11:12 ERROR LoggerConfig:49 - User is not present for username none@not.com
+2021-07-30 14:11:58 ERROR LoggerConfig:49 - User is not present for username none@not.com
+2021-07-30 14:13:43 ERROR LoggerConfig:49 - User is not present for username none@not.com
+2021-07-30 14:16:43 ERROR LoggerConfig:49 - User is not present for username none@not.com
+2021-07-30 14:16:44 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 14:16:44 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 14:16:46 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 15:14:31 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-30 16:57:32 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-07-31 00:03:39 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:05:53 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 00:06:12 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:08:08 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:09:04 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:12:49 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:12:52 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:12:54 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:24:07 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:30:52 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:35:18 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:38:54 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 00:39:03 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 00:39:11 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 00:39:20 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 01:38:04 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:38:22 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 01:39:47 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:40:26 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:44:11 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:45:41 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:47:49 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:49:13 ERROR LoggerConfig:49 - User is not present for username couponclientapp
+2021-08-01 01:50:23 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 01:50:34 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 01:52:40 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 01:53:01 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 01:59:07 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:00:20 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:00:30 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:00:40 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:00:51 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:05:27 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:12:41 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:13:31 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:25:45 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:25:49 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:33:52 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:36:40 INFO  LoggerConfig:52 - User is present with username doug@123.com
+2021-08-01 02:37:55 INFO  LoggerConfig:52 - User is present with username doug@123.com

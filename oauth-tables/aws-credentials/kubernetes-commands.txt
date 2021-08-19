@@ -1,0 +1,9 @@
+kubectl scale --replicas=2 deployment search-deployment
+kubectl scale --replicas=2 deployment auth-deployment
+kubectl scale --replicas=2 deployment user-deployment
+kubectl scale --replicas=2 deployment product-deployment
+kubectl scale --replicas=2 deployment ui-deployment
+
+to setup namesapec
+
+kubectl config set-context --current --namespace=eldorado

@@ -1,0 +1,8 @@
+POST /api/authservice/getaccesstoken
+Host: localhost:9092
+Content-Type: application/json
+
+{
+    "userName": "doug@123.com",
+    "password": "dougie"
+}
